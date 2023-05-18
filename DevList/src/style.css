@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../dist/bg3.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.main {
+    font-size: 20px;
+    color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+input::placeholder {
+    color: aqua;
+}
+
+input {
+    padding-left: 7px;
+}
+
+.main>div {
+    text-align: center;
+}
+
+.add {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+input,
+button {
+    font-size: 25px;
+    height: 40px;
+    border-radius: 20px;
+    border: 3px solid rgb(210, 0, 210);
+}
+
+button {
+    font-family: cursive;
+    background: linear-gradient(to right, rgb(81, 0, 81), rgb(0, 123, 255));
+    color: aqua;
+}
+
+button:hover {
+    background: linear-gradient(to right, rgba(81, 0, 81, 0.813), rgba(0, 123, 255, 0.84));
+}
+
+input {
+    background: rgba(0, 0, 0, 0.676);
+    color: rgb(210, 0, 210);
+}
+
+p {
+    font-weight: 900;
+    font-size: 25px;
+    color: rgb(212, 0, 0);
+}
+
+table {
+    font-weight: 900;
+    width: 100%;
+    text-align: center;
+    background: rgba(3, 3, 3, 0.765);
+    padding: 10px;
+}
+
+th,
+td {
+    height: 50px;
+}
+
+.tab {
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+th {
+    color: rgb(210, 0, 210);
+}
+
+table button {
+    font-size: 24px;
+    font-weight: bolder;
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width:700px) {
+    .main {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .tab {
+        height: 50vh;
+    }
+}
